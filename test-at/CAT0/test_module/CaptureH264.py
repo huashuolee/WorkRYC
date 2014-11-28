@@ -23,7 +23,7 @@ def runTest(serial,srcfile,suitename):
     getlog.start(serial,suitename,srcfile) 
     time.sleep(10)
     raw_input('end record:')
-    getlog.end(serial,suitename, srcfile)
+    #getlog.end(serial,suitename, srcfile)
     returnValue = execonDUT('ls /sdcard/DCIM/Camera/',serial)
     print returnValue[0]
     dfile = ' ../Testcase/result/'+suitename + '/'+ srcfile + '.mp4' 
