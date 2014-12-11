@@ -115,7 +115,6 @@
                    channels="1" />
         </EncoderProfile>
 
-
         <EncoderProfile quality="480p" fileFormat="mp4" duration="60">
             <Video codec="h264"
                    bitRate="4400000"
@@ -211,7 +210,7 @@
         <EncoderProfile quality="480p" fileFormat="mp4" duration="60">
             <Video codec="h264"
                    bitRate="3500000"
-                   width="640"
+                   width="720"
                    height="480"
                    frameRate="30" />
             <Audio codec="aac"
@@ -220,11 +219,39 @@
                    channels="1" />
         </EncoderProfile>
 
+        <EncoderProfile quality="720p" fileFormat="mp4" duration="60">
+            <Video codec="h264"
+                   bitRate="6500000"
+                   width="1280"
+                   height="720"
+                   frameRate="30" />
+            <Audio codec="aac"
+                   bitRate="64000"
+                   sampleRate="48000"
+                   channels="1" />
+        </EncoderProfile>
+
+
         <EncoderProfile quality="timelapse480p" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="3500000"
-                   width="640"
+                   width="720"
                    height="480"
+                   frameRate="30" />
+            <!-- audio setting is ignored since time lapse mode
+                 does not capture audio
+            -->
+            <Audio codec="amrnb"
+                   bitRate="12200"
+                   sampleRate="8000"
+                   channels="1" />
+        </EncoderProfile>
+
+        <EncoderProfile quality="timelapse720p" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+                   bitRate="6500000"
+                   width="1280"
+                   height="720"
                    frameRate="30" />
             <!-- audio setting is ignored since time lapse mode
                  does not capture audio
@@ -332,7 +359,7 @@
         These values are for video encoder.
     -->
     <!--
-      Codec = h.264, Baseline profile, level 4.1
+      Codec = h.264, Baseline profile, level 31
     -->
     <ExportVideoProfile name="h264" profile= "1" level="512"/>
     <!--

@@ -1,0 +1,11 @@
+*.yuv
+build/
+daily_work/
+pnp/
+temp/
+video/
+*.mp4
+*.3gp
+*.jpg
+*.png
+*Clip/
